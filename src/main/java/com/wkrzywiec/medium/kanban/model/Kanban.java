@@ -43,5 +43,4 @@ public class Kanban {
         }
         tasks.add(task);
     }
-        
 }

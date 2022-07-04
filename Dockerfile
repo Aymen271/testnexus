@@ -4,6 +4,5 @@ WORKDIR /workspace
 COPY pom.xml /workspace
 COPY src /workspace/src
 FROM openjdk:8-alpine
-COPY --from=build /workspace/target/*.jar app.jar
 EXPOSE 8080
 ENTRYPOINT ["java","-jar","app.jar"]

@@ -4,7 +4,6 @@ WORKDIR /workspace
 COPY pom.xml /workspace
 COPY src /workspace/src
 
-RUN mvn -f pom.xml package 
 
 FROM openjdk:8-alpine
 COPY --from=build /workspace/target/*.jar app.jar

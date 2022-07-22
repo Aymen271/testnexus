@@ -6,7 +6,7 @@
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>2.1.6.RELEASE</version>
-               <relativePath>../pom.xml</relativePath>
+               <relativePath>../Pfe-test-back/pom.xml</relativePath>
 	</parent>
 	<groupId>com.wkrzywiec.medium</groupId>
 	<artifactId>kanban-app</artifactId>

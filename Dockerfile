@@ -3,8 +3,7 @@ RUN mkdir -p /workspace
 WORKDIR /workspace
 COPY pom.xml /workspace
 COPY src /workspace/src
-RUN mvn  pom.xml clean package
-RUN mvn -f pom.xml package
+RUN mvn   clean package
 
 FROM openjdk:8-alpine
 COPY --from=build /workspace/target/*.jar app.jar

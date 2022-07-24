@@ -13,7 +13,20 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>kanban-app</name>
 	<description>Backend app for Kanban app</description>
-
+<repositories>
+    <repository>
+        <id>internal-repo</id>
+        <name>internal repository</name>
+        <url>https://repo.maven.apache.org/maven2</url>
+        <layout>default</layout>
+        <releases>
+            <enabled>true</enabled>
+        </releases>
+        <snapshots>
+            <enabled>true</enabled>
+        </snapshots>
+    </repository>
+</repositories>
 	<properties>
 		<java.version>1.8</java.version>
 		<skip.integration.tests>false</skip.integration.tests>

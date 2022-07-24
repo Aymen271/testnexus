@@ -6,6 +6,7 @@
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>2.1.6.RELEASE</version>
+		<relativePath>../var/lib/jenkins/workspace/Pfe-test-back/pom.xml</relativePath>
 		
 	</parent>
 	<groupId>com.wkrzywiec.medium</groupId>
@@ -13,8 +14,7 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>kanban-app</name>
 	<description>Backend app for Kanban app</description>
-	<relativePath>../pom.xml</relativePath>
-
+	
 	<properties>
 		<java.version>1.8</java.version>
 		<skip.integration.tests>false</skip.integration.tests>

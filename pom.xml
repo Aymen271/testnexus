@@ -20,21 +20,8 @@
 		<skip.integration.tests>false</skip.integration.tests>
 		<sonar.exclusions>**/model/**,**/config/**,**/KanbanApplication.java</sonar.exclusions>
 	</properties>
-	<distributionManagement>
-    		<snapshotRepository>
-      			<id>nexus-snapshots</id>
-     		 	<url>http://172.29.4.125:32500/repository/maven-snapshots/</url>
-   		</snapshotRepository>
-  	</distributionManagement>
-	<settings>
-  		<servers>
-    			<server>
-      				<id>nexus-snapshots</id>
-      				<username>admin</username>
-      				<password>Cisco123*</password>
-    			</server>
-  		</servers>
-	</settings>
+	
+	
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>

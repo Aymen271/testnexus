@@ -7,7 +7,7 @@ pipeline {
         stage('Nexus'){
             steps{
                sh"mvn clean install"
-               sh"mvn clean -DskipTests package deploy:deploy-file -DgroupId=com.wkrzywiec.medium -DartifactId=kanban-app -Dversion=0.0.1-SNAPSHOT  -DgeneratePom=true -Durl=http://172.29.4.125:32500/repository/maven-snapshots/ -Dpackaging=jar -Dfile=target/kanban-app-0.0.1-SNAPSHOT.jar"
+               sh"mvn clean -DskipTests package deploy:deploy-file -DgroupId=com.wkrzywiec.medium -DartifactId=kanban-app -Dversion=0.0.1-SNAPSHOT -Dpackaging=jar -DrepositoryId=NexusID -DgeneratePom=true -Durl=http://172.29.4.125:32500/repository/maven-snapshots/ -Dfile=target/kanban-app-0.0.1-SNAPSHOT.jar"
                
     }
             }

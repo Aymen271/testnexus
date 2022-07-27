@@ -17,4 +17,4 @@ spec:
    spec: 
     containers: 
     - name: test-container 
-      image: souhaibhsoumi/backendproject:1.2
+      image: aymenchab/testnexus:1.0

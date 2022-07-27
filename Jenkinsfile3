@@ -1,0 +1,14 @@
+pipeline {
+    options {
+        timeout(time: 1, unit: 'HOURS')
+    }
+    agent any
+    stages {
+        stage('Nexus'){
+            steps{
+               sh"mvn clean -DskipTests package deploy:deploy-file -DgroupId=com.wkrzywiec.medium -DartifactId=kanban-app -Dversion=0.0.1-SNAPSHOT  -DgeneratePom=true -Dpackaging=jar -DrepositoryId=deploymentRepo -Durl=http://localhost:8081/repository/maven-snapshots/ -Dfile=target/kanban-app-0.0.1-SNAPSHOT.jar"
+    }
+            }
+
+}
+}

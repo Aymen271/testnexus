@@ -20,6 +20,12 @@
 		<skip.integration.tests>false</skip.integration.tests>
 		<sonar.exclusions>**/model/**,**/config/**,**/KanbanApplication.java</sonar.exclusions>
 	</properties>
+	<repositories>
+	<repository>
+	  <id>NexusID</id>  
+	  <url>http://172.29.4.125:32500/repository/maven-snapshots/</url>
+	</repository>
+	</repositories>
 	
 
 	<dependencies>

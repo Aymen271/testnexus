@@ -21,19 +21,7 @@
 		<sonar.exclusions>**/model/**,**/config/**,**/KanbanApplication.java</sonar.exclusions>
 	</properties>
 	
-	<servers>
-  		<server>
-    		<id>Nexus1</id>
-   		 <username>admin</username>
-  		  <password>Cisco123*</password>
-		  </server>
-		</servers>
-	<repositories>
-	<repository>
-	  <id>Nexus1</id>  
-	  <url>http://172.29.4.125:32500</url>
-	</repository>
-</repositories>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>

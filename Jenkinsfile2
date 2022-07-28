@@ -6,6 +6,7 @@ pipeline {
     stages {
         stage('build and push') {
             steps {
+                   sh" mvn compile"
                    sh "sudo /opt/sonar-scanner/bin/sonar-scanner \
                    -Dsonar.projectKey=testnexus \
                    -Dsonar-sources=. \

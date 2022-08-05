@@ -9,8 +9,8 @@
 		<relativePath/>
 		
 	</parent>
-	<groupId>com.wkrzywiec.medium</groupId>
-	<artifactId>kanban-app</artifactId>
+	<groupId>com.test.projet</groupId>
+	<artifactId>nexus-app</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>kanban-app</name>
 	<description>Backend app for Kanban app</description>

@@ -7,8 +7,8 @@ pipeline {
         stage('Nexus'){
             steps{
                sh"mvn clean install"
-               sh"mvn clean -DskipTests package deploy:deploy-file -DgroupId=com.wkrzywiec.medium \
-               -DartifactId=kanban-app \
+               sh"mvn clean -DskipTests package deploy:deploy-file -DgroupId=com.test.project \
+               -DartifactId=nexus-app \
                -Dversion=0.0.1-SNAPSHOT \
                -Dpackaging=jar \
                -DrepositoryId=NexusID \

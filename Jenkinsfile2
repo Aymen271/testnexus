@@ -4,9 +4,9 @@ pipeline {
     }
     agent any
     stages {
-        stage('build and push') {
+        stage('Code quality controle') {
             steps {
-                   sh" mvn compile"
+                   
                    sh "sudo /opt/sonar-scanner/bin/sonar-scanner \
                    -Dsonar.projectKey=testnexus \
                    -Dsonar-sources=. \
@@ -14,6 +14,13 @@ pipeline {
                    -Dsonar.login=df72de26ae67705f00562aadbfa1d05503c5e1ca" 
             }
             }
+        stage('Build and tests) {
+            steps{
+             sh" mvn compile";
+             sh"mvn build";
+             sh"mvn test"
+             }
+        }
 
 }
 }
